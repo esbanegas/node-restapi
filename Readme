@@ -1,0 +1,39 @@
+--Running in development
+    npm run dev
+
+--Create folder dist for production
+    npm run build
+
+--Running in mode production folder dist
+    npm start
+
+
+--Routes
+
+    --GET
+        description: Get all tasks
+        api: http://localhost:5000/tasks
+    
+    --POST
+        description: Add new task
+        api: http://localhost:5000/tasks
+        body: {
+            title: '',
+            description: ''
+        }
+
+    --GET
+        description: Get single task
+        api: http://localhost:5000/tasks?MyId
+
+    ----DELETE
+        description: Delete task
+        api: http://localhost:5000/tasks?MyId
+
+    --PUT
+        description: Update an task
+        api: http://localhost:5000/tasks?MyId
+        body: {
+            title: '',
+            description: ''
+        }
